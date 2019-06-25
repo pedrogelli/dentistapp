@@ -1,0 +1,78 @@
+@import url(componentes.css);
+
+/*================
+  MENU
+================*/
+.navbar {
+  background-color: #47d8ff;
+}
+.navbar-brand a {
+  color: white;
+}
+.nav-link {
+  display: inline-block;
+}
+/*================
+  MENU - DROPBOWN
+================*/
+
+/*================
+  CONTAINER
+================*/
+.container {
+  padding-top: 30px;
+}
+.container a {
+  color: black;
+}
+.container a:hover {
+  color: #47d8ff;
+}
+
+/*================
+  BUTTONS
+================*/
+.btn {
+  margin: 5px;
+}
+.btn-editar,
+.btn-excluir,
+.btn-consultas {
+  font-weight: bold;
+}
+
+a.btn-consultas {
+  color: #47d8ff !important;
+}
+
+/*================
+  CONTAINERS
+================*/
+.fundo-sem-consulta,
+.fundo-sem-informacao {
+  text-align: center;
+}
+
+/*================
+  BOOTSTRAP CARD
+================*/
+.card {
+  margin: 30px auto;
+}
+.card-body {
+  background-color: #47d8ff;
+  color: white;
+}
+.card-body .fa-ellipsis-v {
+  color: white;
+}
+.card-subtitle {
+  color: white !important;
+}
+.card-footer {
+  background-color: #e3f9ff;
+}
+
+.card-link svg {
+  margin-right: 10px;
+}
