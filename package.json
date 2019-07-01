@@ -17,6 +17,7 @@
     "firebase": "^6.2.3",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
+    "typeface-open-sans": "0.0.54",
     "vue": "^2.6.10",
     "vue-bootstrap-datetimepicker": "^5.0.1",
     "vue-firestore": "^0.3.21",
