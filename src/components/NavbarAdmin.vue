@@ -28,9 +28,9 @@
         <b-nav-item-dropdown right>
           <!-- Using 'button-content' slot -->
           <template slot="button-content">
-            <em>Administrador</em>
+            <em>Nome do administrador</em>
           </template>
-          <b-dropdown-item href="#">Nome do admin</b-dropdown-item>
+          <b-dropdown-item to="perfil">Perfil</b-dropdown-item>
           <b-dropdown-item href="#" @click="logout()">Sair</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>

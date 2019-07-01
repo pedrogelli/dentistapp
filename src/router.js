@@ -4,6 +4,7 @@ import Consultas from "./views/Consultas.vue";
 // APP
 import AgendarConsulta from "./views/app/AgendarConsulta.vue";
 import Login from "./views/app/Login.vue";
+import Perfil from "./views/app/Perfil.vue";
 // ADMIN
 import AdminConsultas from "./views/admin/AdminConsultas.vue";
 import Dentistas from "./views/admin/Dentistas.vue";
@@ -16,11 +17,18 @@ import { fb } from "./firebase";
 Vue.use(Router);
 
 const router = new Router({
+  mode: "history",
   routes: [
     {
       path: "/",
       name: "login",
       component: Login
+    },
+    {
+      path: "/perfil",
+      name: "Perfil",
+      component: Perfil,
+      meta: { requiresAuth: true }
     },
     {
       path: "/consultas",
