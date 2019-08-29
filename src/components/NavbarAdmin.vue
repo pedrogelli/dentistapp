@@ -22,6 +22,9 @@
         <router-link to="/agendar-consulta" class="nav-link"
           >Agendar Consulta</router-link
         >
+        <router-link to="/pacientes/editar" class="nav-link"
+          >Editar Pacientes</router-link
+        >
       </b-navbar-nav>
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
@@ -42,6 +45,12 @@
 import { db, fb } from "../firebase";
 export default {
   name: "NavbarAdmin",
+  data() {
+    return {
+      nome: null,
+      email: null
+    };
+  },
   methods: {
     logout() {
       fb.auth()
@@ -56,6 +65,10 @@ export default {
           console.log(err);
         });
     }
+  },
+  created() {
+    var user = fb.auth().currentUser;
+    this.email = user.email;
   }
 };
 </script>

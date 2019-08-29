@@ -36,6 +36,8 @@
                   placeholder="E-mail"
                 ></b-form-input>
               </b-form-group>
+            </b-col>
+            <b-col>
               <b-form-group class="input">
                 <b-form-input
                   v-model="perfil.senha"
@@ -43,6 +45,8 @@
                   placeholder="Nova senha"
                 ></b-form-input>
               </b-form-group>
+            </b-col>
+            <b-col>
               <b-form-group class="input">
                 <b-form-input
                   v-model="perfil.confirmarSenha"
@@ -50,7 +54,9 @@
                   placeholder="Confirmar senha"
                 ></b-form-input>
               </b-form-group>
-              <b-button type="submit" variant="primary">Adicionar</b-button>
+            </b-col>
+            <b-col cols="12">
+              <b-button type="submit" variant="primary">Salvar</b-button>
               <b-button type="reset" variant="danger">Cancelar</b-button>
             </b-col>
           </b-form-row>

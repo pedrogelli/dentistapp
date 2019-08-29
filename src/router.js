@@ -11,6 +11,7 @@ import Dentistas from "./views/admin/Dentistas.vue";
 import AddDentista from "./views/admin/AddDentista.vue";
 import Pacientes from "./views/admin/Pacientes.vue";
 import AddPaciente from "./views/admin/AddPaciente.vue";
+import EditarPaciente from "./views/admin/EditarPaciente.vue";
 
 import { fb } from "./firebase";
 
@@ -70,6 +71,12 @@ const router = new Router({
       path: "/add-paciente",
       name: "AddPaciente",
       component: AddPaciente,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: "/pacientes/editar",
+      name: "EditarPaciente",
+      component: EditarPaciente,
       meta: { requiresAuth: true }
     }
   ]
